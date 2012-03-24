@@ -1,12 +1,12 @@
 (function($) {
-  // PlaceKitten JQuery Plugin
-  $.fn.placekitten = function(options, callback) {
+  // PlaceCharlie JQuery Plugin
+  $.fn.placecharlie = function(options, callback) {
     // Setup
     var $elements = this;
     if (!$elements.length) { return $elements; }
-    options = $.extend({},$.fn.placekitten.defaults, options);
+    options = $.extend({},$.fn.placecharlie.defaults, options);
 
-    // Turn each element selected into a kitten
+    // Turn each element selected into a charlie
     $elements.each(function() {
       var element = this,
          $element = $(element);
@@ -27,30 +27,30 @@
            width = $element.width();
 
       // Swap target for kitten image
-      var imageUrl = 'http://placekitten.com/' + width + '/' + height;
-      var $kitten = $('<img src="' + imageUrl + '" />');
+      var imageUrl = 'http://placesheen.com/' + width + '/' + height;
+      var $charlie = $('<img src="' + imageUrl + '" />');
 
-      // Load target css into kitten element
+      // Load target css into charlie element
       if (style) {
         $kitten[0].style.cssText = style;
       } else {
-        $kitten.css({
+        $charlie.css({
           'display': display,
             'width': width,
            'height': height
         });
       }
 
-      // Swap the element for a kitten
-      $element.replaceWith($kitten);
-      $kitten.hide().fadeIn(options.fadeSpeed, callback);
+      // Swap the element for a charlie
+      $element.replaceWith($charlie);
+      $charlie.hide().fadeIn(options.fadeSpeed, callback);
     });
 
     return $elements;
   };
 
   // default options
-  $.fn.placekitten.defaults = {
+  $.fn.placecharlie.defaults = {
     fadeSpeed: 500
   };
 

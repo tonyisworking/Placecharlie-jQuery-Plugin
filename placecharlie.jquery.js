@@ -26,13 +26,13 @@
       var height = $element.height(),
            width = $element.width();
 
-      // Swap target for kitten image
+      // Swap target for charlie image
       var imageUrl = 'http://placesheen.com/' + width + '/' + height;
       var $charlie = $('<img src="' + imageUrl + '" />');
 
       // Load target css into charlie element
       if (style) {
-        $kitten[0].style.cssText = style;
+        $charlie[0].style.cssText = style;
       } else {
         $charlie.css({
           'display': display,

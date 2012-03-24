@@ -1,4 +1,4 @@
-# Place<s>kitten</s>SHEEN jQuery Plugin
+# Place<strike>kitten</strike>SHEEN jQuery Plugin
 
 Turns HTML elements into Charlie Sheens.
 
